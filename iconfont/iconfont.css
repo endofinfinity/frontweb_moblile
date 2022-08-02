@@ -1,0 +1,60 @@
+/* 定义字体 */
+@font-face {
+  font-family: "iconfont"; /* Project id 3551239 */
+  src: url('iconfont.woff2?t=1658915935507') format('woff2'),
+       url('iconfont.woff?t=1658915935507') format('woff'),
+       url('iconfont.ttf?t=1658915935507') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-right:before {
+  content: "\e665";
+}
+
+.icon-column-horizontal:before {
+  content: "\e668";
+}
+
+.icon-complete:before {
+  content: "\e669";
+}
+
+.icon-chart-pie:before {
+  content: "\e66a";
+}
+
+.icon-cry:before {
+  content: "\e66b";
+}
+
+.icon-customer-service:before {
+  content: "\e66c";
+}
+
+.icon-delete:before {
+  content: "\e66d";
+}
+
+.icon-copy:before {
+  content: "\e66e";
+}
+
+.icon-direction-down-circle:before {
+  content: "\e66f";
+}
+
+.icon-direction-right:before {
+  content: "\e670";
+}
+
+.icon-direction-left:before {
+  content: "\e671";
+}
+
