@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>平开门</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            width: 1366px;
+            height: 600px;
+            margin: 0 auto;
+            /* background: url("./images/bg.jpg");  */
+
+            background-image: url(./images/bg.jpg);
+            /* 超过区域隐藏 */
+            overflow: hidden;
+        }
+
+        .box::before,
+        .box::after {
+            float: left;
+            content: "";
+            width: 50%;
+            height: 100%;
+            background-image: url(./images/fm.jpg);
+            /* 添加位移过渡时间        */
+            transition: all 1s;
+
+
+
+        }
+
+        /* 单独设置右侧精灵图截取位置，不是定位 */
+        .box::after {
+            background-position: right 0;
+
+        }
+
+        /* hover 效果,父级hover，子级位移 */
+        .box:hover::before {
+            transform: translate(-100%);
+        }
+
+        .box:hover::after {
+            transform: translate(100%);
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+    
+</body>
+</html>
