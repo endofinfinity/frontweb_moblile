@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3d导航</title>
+    <style>
+        ul {
+
+            margin: 0;
+            padding: 0;
+            /* 去除a链接特征 */
+            list-style: none;
+        }
+
+        .navs {
+            width: 300px;
+            height: 40px;
+            margin: 50px auto;
+        }
+
+        .navs li {
+            position: relative;
+            float: left;
+
+
+            width: 100px;
+            height: 40px;
+            line-height: 40px;
+            transition: all 1s;
+            transform-style: preserve-3d;
+
+            /* 旋转: 让大家在写代码的过程中看到立体盒子 */
+            /* transform:  rotateY(30deg) rotateX(-20deg); */
+        }
+
+        .navs li a {
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: block;
+            width: 100%;
+            height: 100%;
+
+            text-align: center;
+            /* 删除下划线 */
+            text-decoration: none;
+            color:#fff;
+        }
+
+        .navs li a:first-child {
+            background-color: orange;
+            /* 躺平x轴旋转  立方体的顶部,位移z(确保看到这个盒子) */
+            
+            
+        }
+
+        .navs li a:last-child {
+            background-color: blue;
+            transform:  translateY(-20px) translateZ(-20px) rotateX(90deg) ;
+        }
+
+        .navs li:hover {
+            transform: translateY(20px) rotateX(-90deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="navs">
+        <ul>
+            <li>
+                <a href="#">首页</a>
+                <a href="#">Index</a>
+            </li>
+            <li>
+                <a href="#">登录</a>
+                <a href="#">Login</a>
+            </li>
+            <li>
+                <a href="#">注册</a>
+                <a href="#">Register</a>
+            </li>
+        </ul>
+    </div>
+    
+</body>
+</html>

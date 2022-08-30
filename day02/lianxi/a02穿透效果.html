@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>穿透perspective</title>
+    <style>
+        body {
+            
+            perspective: 800px;
+            /* perspective: 8000px; */
+            /* perspective: 200px; */
+        }
+
+        .box {
+            width: 300px;
+            height: 400px;
+            margin: 100px auto;
+            background-color: pink;
+
+            transition: all 0.5s;
+        }
+
+        .box:hover {
+            transform: translateZ(200px);
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 父级加perspective属性：800-1200px -->
+    <div class="box"></div>
+</body>
+</html>
