@@ -30,7 +30,7 @@ body {
     top: 100px;
     animation: cloud 1s infinite alternate 0.2s;
 
-    
+
 }
 
 .cloud img:nth-child(3) {
@@ -52,5 +52,3 @@ body {
         transform: translateX(20px);
     }
 }
-
-
