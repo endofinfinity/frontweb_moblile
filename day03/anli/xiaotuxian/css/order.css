@@ -79,6 +79,124 @@ body {
 }
 
 
+/* 商品相关信息 */
+.goods_msg {
+    display: flex;
+    padding: 11px 11px 11px 11px;
+}
+
+.goods_msg .pic {
+    width: 85px;
+    height: 85px;
+    margin-right: 10px;
+}
+
+.goods_msg .info {
+    flex: 1;
+
+}
+
+.goods_msg .info h5 {
+    font-size: 13px;
+    color: #226262;
+    font-weight: 400;
+}
+
+.goods_msg .info p {
+    width: 95px;
+    height: 20px;
+    margin: 5px 0;
+    background-color: #f7f7f8;
+    font-size: 12px;
+    color: #888;
+}
+
+.goods_msg .info p span:first-child {
+    margin-right: 5px;
+}
+
+.goods_msg .info .price {
+    font-size: 12px;
+}
+
+.goods_msg .info .price i {
+    font-size: 16px;
+}
+
+.goods_msg .info .price span:last-child {
+    margin-left: 5px;
+    color: #999;
+    /* 作废价格 */
+    text-decoration: line-through;
+}
+
+.goods_msg .count {
+    width: 44px;
+    height: 44px;
+    /* background-color: pink; */
+    text-align: center;
+    line-height: 44px;
+}
+
+/* 物流信息 */
+.trans {
+    padding: 15px;
+}
+
+.trans div {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.trans div:nth-child(2n+1) {
+    justify-content: space-between;
+}
+
+.trans div:nth-child(2) h5 {
+    margin-right: 20px;
+}
+
+.trans h5,
+.trans p {
+    font-size: 13px;
+    color: #262626;
+    font-weight: 400;
+}
+
+.trans div:nth-child(2) p {
+    font-size: 12px;
+    color: #989898;
+}
+
+.trans div:last-child {
+    margin-bottom: 10px;
+}
+
+/* 收款信息 */
+
+.money {
+    padding: 15px;
+}
+.money div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.money div h5 {
+    font-weight: 400;
+}
+
+.money div:last-child span {
+    color: #cf4444;
+}
+
+
+
+
+
 /* 底部pay */
 .pay {
     position: fixed;
@@ -122,7 +240,7 @@ body {
             #54b196 100%);
     border-radius: 3px;
 
-    
+
     font-size: 13px;
     font-weight: normal;
     line-height: 35px;
