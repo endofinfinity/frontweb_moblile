@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body {
+  font-family: Helvetica Neue, Tahoma, Arial, PingFangSC-Regular, Hiragino Sans GB, Microsoft Yahei, sans-serif;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+img {
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+}
+ul {
+  list-style: none;
+}
+.ellipsis-2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+header {
+  position: fixed;
+  left: 0;
+  top: o;
+  width: 100%;
+  height: 22.4vw;
+  background-color: #fff;
+  z-index: 1;
+}
+header .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 11.73333333vw;
+  padding-left: 4.8vw;
+  padding-right: 3.2vw;
+}
+header .top .left .Navbar_logo {
+  font-size: 7.46666667vw;
+  color: #fb7299;
+}
+header .top .right {
+  display: flex;
+}
+header .top .right .ic_search_tab {
+  font-size: 5.33333333vw;
+  color: #ccc;
+}
+header .top .right .login {
+  height: 6.4vw;
+  padding-left: 7.46666667vw;
+  color: #fb7299;
+}
+header .top .right .downlaod {
+  height: 6.4vw;
+  padding-left: 7.46666667vw;
+  color: #fb7299;
+}
+header .bottom {
+  display: flex;
+  justify-content: space-between;
+  height: 10.66666667vw;
+  border-bottom: 1px solid #eee;
+}
+header .bottom .more a {
+  width: 10.66666667vw;
+  height: 10.66666667vw;
+}
+header .bottom .more a .general_pulldown_s {
+  font-size: 5.86666667vw;
+  line-height: 10.66666667vw;
+  text-align: center;
+  padding: 0 2.13333333vw;
+  color: #ccc;
+}
+header .bottom .tab ul {
+  display: flex;
+}
+header .bottom .tab ul li a {
+  display: block;
+  line-height: 5.86666667vw;
+  padding: 2.13333333vw 4.26666667vw;
+  font-size: 3.73333333vw;
+}
+header .bottom .tab ul li a.current {
+  color: #fb7299;
+  border-bottom: 2px solid #fb7299;
+}
+section {
+  padding: 22.4vw 1.33333333vw 0;
+}
+section .vedio_list {
+  display: flex;
+  flex-wrap: wrap;
+}
+section .vedio_list a {
+  width: 50%;
+  padding: 2.13333333vw 1.33333333vw;
+  background-color: pink;
+}
+section .vedio_list a .txt {
+  font-size: 2.66666667vw;
+  padding-top: 1.33333333vw;
+}
+section .vedio_list a .pic {
+  position: relative;
+}
+section .vedio_list a .pic .count {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 2.13333333vw;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+  color: #fff;
+}
+section .vedio_list a .pic .count i {
+  vertical-align: middle;
+}
