@@ -1,0 +1,174 @@
+@import './base';
+
+@vw: 3.75vw;
+@colorpink: #fb7299;
+
+header {
+    // 固定
+    position: fixed;
+    left: 0;
+    top: o;
+
+    // 形状
+    width: 100%;
+    height: (84/@vw);
+    background-color: #fff;
+    z-index: 1;
+
+    .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+
+        // 单独设置高边距
+        height: (44/@vw);
+        padding-left: (18/@vw);
+        padding-right: (12/@vw);
+        // background-color: green;
+
+        .left {
+            .Navbar_logo {
+                font-size: (28/@vw);
+                color: @colorpink;
+
+            }
+        }
+
+        .right {
+            display: flex;
+
+            .ic_search_tab {
+                font-size: (20/@vw);
+                color: #ccc;
+            }
+
+            .login {
+                height: (24/@vw);
+                padding-left: (28/@vw);
+                color: @colorpink;
+            }
+
+            .downlaod {
+                height: (24/@vw);
+                padding-left: (28/@vw);
+                color: @colorpink;
+            }
+        }
+
+    }
+
+    .bottom {
+        display: flex;
+        justify-content: space-between;
+
+        // 设置底边
+        height: (40/@vw);
+        border-bottom: 1px solid #eee;
+
+        .more {
+            a {
+                width: (40/@vw);
+                height: (40/@vw);
+                
+    
+                .general_pulldown_s {
+                    font-size: (22/@vw);
+                    line-height: (40/@vw);
+                    text-align: center;
+                    padding: 0 (8/@vw);
+                    color: #ccc;
+    
+                }
+
+        }
+
+        
+        }
+
+        .tab {
+            ul {
+                display: flex;
+
+                li {
+                    
+                    a {
+                        display: block;
+                        
+                        line-height: (22/@vw);
+                        padding: (8/@vw) (16/@vw);
+                        
+                        font-size: (14/@vw);
+                        
+
+                        &.current {
+                            color: @colorpink;
+                            
+                            border-bottom: 2px solid @colorpink;;
+                            
+                        }
+        
+                    }
+                }
+
+            }
+            
+            
+            
+        }
+
+
+
+
+
+    }
+
+}
+
+section {
+    padding: (84/@vw) (5/@vw) 0;
+
+    .vedio_list {
+        display: flex;
+        flex-wrap: wrap;
+
+        a {
+            width: 50%;
+            padding: (8/@vw) (5/@vw);   
+            background-color: pink;   
+            
+            .txt {
+                font-size: (10/@vw);
+                padding-top: (5/@vw);
+            }
+
+            .pic {
+                position: relative;
+
+                .count {
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+
+                    display: flex;
+                    justify-content: space-between;
+                    // 宽度设置为盒子模型宽度
+                    width: 100%;
+                    padding: (8/@vw);
+                    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+
+                    color: #fff;
+
+                    i {
+                        vertical-align: middle;
+                    }
+                    
+
+                }
+            }
+
+
+        }
+
+    }
+}
